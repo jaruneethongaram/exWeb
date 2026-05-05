@@ -51,3 +51,67 @@
 .nav-links a:hover {
     color: #3498db;
 }
+
+
+/*--------ส่วนของ grid----------*/
+/* ส่วนหัวข้อ */
+.featured-products {
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.featured-products h2 {
+    margin-bottom: 30px;
+}
+
+/* --- เริ่มต้นทำ Grid --- */
+.product-grid {
+    display: grid;
+    gap: 20px; /* ระยะห่างระหว่างช่อง */
+    
+    /* [โจทย์] มือถือ: แสดง 1 ชิ้น/บรรทัด (ค่าเริ่มต้น) */
+    grid-template-columns: 1fr; 
+}
+
+/* [โจทย์] แท็บเล็ต (กว้าง 600px ขึ้นไป): แสดง 2 ชิ้น/บรรทัด */
+@media (min-width: 600px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* [โจทย์] คอมพิวเตอร์ (กว้าง 1024px ขึ้นไป): แสดง 3 ชิ้น/บรรทัด */
+@media (min-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ตกแต่ง Card ให้สวยงาม */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background: #fff;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
