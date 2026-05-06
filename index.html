@@ -1,1 +1,254 @@
-<h1>สวัสดี วิชา Mobile Web App.</h1>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้ารายการสินค้า - 16 Items</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Sarabun', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">GadgetStore</div>
+            <div class="space-x-6 hidden md:flex">
+                <a href="#" class="text-gray-600 hover:text-blue-600">หน้าแรก</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600">สินค้าทั้งหมด</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600">โปรโมชั่น</a>
+            </div>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                ตะกร้าสินค้า (0)
+            </button>
+        </div>
+    </nav>
+
+    <header class="bg-blue-600 py-12 text-center text-white">
+        <h1 class="text-4xl font-bold mb-3">สินค้าทั้งหมด (16 รายการ)</h1>
+        <p class="opacity-90">เลือกชมสินค้าไอทีคุณภาพ พร้อมโปรโมชั่นพิเศษวันนี้</p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden flex flex-col">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-5 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold bg-blue-100 text-blue-600 px-2 py-1 rounded-full w-max">Audio</span>
+                    <h3 class="text-lg font-bold mt-2 text-gray-800">หูฟังไร้สาย Pro Sound</h3>
+                    <p class="text-gray-500 text-sm mt-1 mb-4 flex-grow">ตัดเสียงรบกวนดีเยี่ยม แบตเตอรี่อึด 40 ชม.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-blue-600">฿3,500</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden flex flex-col">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-5 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold bg-green-100 text-green-600 px-2 py-1 rounded-full w-max">Accessories</span>
+                    <h3 class="text-lg font-bold mt-2 text-gray-800">Smart Watch Series 7</h3>
+                    <p class="text-gray-500 text-sm mt-1 mb-4 flex-grow">ติดตามสุขภาพแม่นยำ กันน้ำลึก 50 เมตร</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-blue-600">฿8,900</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden flex flex-col">
+                <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=500" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-5 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold bg-purple-100 text-purple-600 px-2 py-1 rounded-full w-max">Computer</span>
+                    <h3 class="text-lg font-bold mt-2 text-gray-800">จอมอนิเตอร์ 27" 4K</h3>
+                    <p class="text-gray-500 text-sm mt-1 mb-4 flex-grow">สีตรง 100% sRGB เหมาะสำหรับงานกราฟิก</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-blue-600">฿12,500</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden flex flex-col">
+                <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-5 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold bg-orange-100 text-orange-600 px-2 py-1 rounded-full w-max">Gadgets</span>
+                    <h3 class="text-lg font-bold mt-2 text-gray-800">ลำโพง Bluetooth พกพา</h3>
+                    <p class="text-gray-500 text-sm mt-1 mb-4 flex-grow">เสียงเบสหนักแน่น พกพาสะดวกทุกที่</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-blue-600">฿1,890</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden flex flex-col">
+                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-5 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold bg-blue-100 text-blue-600 px-2 py-1 rounded-full w-max">Audio</span>
+                    <h3 class="text-lg font-bold mt-2 text-gray-800">หูฟัง Headphone Studio</h3>
+                    <p class="text-gray-500 text-sm mt-1 mb-4 flex-grow">ดีไซน์คลาสสิก ใส่สบายตลอดวัน</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-blue-600">฿4,200</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden flex flex-col">
+                <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=500" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-5 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded-full w-max">Laptop</span>
+                    <h3 class="text-lg font-bold mt-2 text-gray-800">Laptop UltraBook 14"</h3>
+                    <p class="text-gray-500 text-sm mt-1 mb-4 flex-grow">บางเบา ทรงพลัง สำหรับคนทำงาน</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-blue-600">฿29,900</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden flex flex-col">
+                <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=500" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-5 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold bg-purple-100 text-purple-600 px-2 py-1 rounded-full w-max">Computer</span>
+                    <h3 class="text-lg font-bold mt-2 text-gray-800">Mechanical Keyboard</h3>
+                    <p class="text-gray-500 text-sm mt-1 mb-4 flex-grow">สวิตช์สัมผัสเยี่ยม ไฟ RGB ปรับแต่งได้</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-blue-600">฿2,590</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden flex flex-col">
+                <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=500" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-5 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold bg-green-100 text-green-600 px-2 py-1 rounded-full w-max">Accessories</span>
+                    <h3 class="text-lg font-bold mt-2 text-gray-800">เมาส์ไร้สาย Ergonomic</h3>
+                    <p class="text-gray-500 text-sm mt-1 mb-4 flex-grow">ลดอาการปวดข้อมือ แบตใช้งานได้ 6 เดือน</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-blue-600">฿1,190</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden flex flex-col">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-5 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold bg-blue-100 text-blue-600 px-2 py-1 rounded-full w-max">Audio</span>
+                    <h3 class="text-lg font-bold mt-2 text-gray-800">หูฟังไร้สาย Pro Sound</h3>
+                    <p class="text-gray-500 text-sm mt-1 mb-4 flex-grow">สีดำด้าน คอลเลคชันพิเศษ</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-blue-600">฿3,500</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden flex flex-col">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-5 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold bg-green-100 text-green-600 px-2 py-1 rounded-full w-max">Accessories</span>
+                    <h3 class="text-lg font-bold mt-2 text-gray-800">Smart Watch Series 7</h3>
+                    <p class="text-gray-500 text-sm mt-1 mb-4 flex-grow">สายแบบสปอร์ต ระบายเหงื่อได้ดี</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-blue-600">฿8,900</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden flex flex-col">
+                <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=500" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-5 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold bg-purple-100 text-purple-600 px-2 py-1 rounded-full w-max">Computer</span>
+                    <h3 class="text-lg font-bold mt-2 text-gray-800">จอมอนิเตอร์ 27" 4K</h3>
+                    <p class="text-gray-500 text-sm mt-1 mb-4 flex-grow">หน้าจอถนอมสายตา ไร้แสงสะท้อน</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-blue-600">฿12,500</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden flex flex-col">
+                <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-5 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold bg-orange-100 text-orange-600 px-2 py-1 rounded-full w-max">Gadgets</span>
+                    <h3 class="text-lg font-bold mt-2 text-gray-800">ลำโพง Bluetooth พกพา</h3>
+                    <p class="text-gray-500 text-sm mt-1 mb-4 flex-grow">รุ่นกันน้ำ IP67 ปาร์ตี้ได้ทุกที่</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-blue-600">฿1,890</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden flex flex-col">
+                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-5 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold bg-blue-100 text-blue-600 px-2 py-1 rounded-full w-max">Audio</span>
+                    <h3 class="text-lg font-bold mt-2 text-gray-800">หูฟัง Headphone Studio</h3>
+                    <p class="text-gray-500 text-sm mt-1 mb-4 flex-grow">ไมโครโฟนคมชัด สำหรับสายสตรีมเมอร์</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-blue-600">฿4,200</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden flex flex-col">
+                <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=500" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-5 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded-full w-max">Laptop</span>
+                    <h3 class="text-lg font-bold mt-2 text-gray-800">Laptop UltraBook 14"</h3>
+                    <p class="text-gray-500 text-sm mt-1 mb-4 flex-grow">ชิปเซ็ตรุ่นใหม่ล่าสุด เร็วแรงไม่มีสะดุด</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-blue-600">฿29,900</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden flex flex-col">
+                <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=500" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-5 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold bg-purple-100 text-purple-600 px-2 py-1 rounded-full w-max">Computer</span>
+                    <h3 class="text-lg font-bold mt-2 text-gray-800">Mechanical Keyboard</h3>
+                    <p class="text-gray-500 text-sm mt-1 mb-4 flex-grow">Blue Switch พิมพ์สนุก เสียงคลิกสะใจ</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-blue-600">฿2,590</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden flex flex-col">
+                <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=500" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-5 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold bg-green-100 text-green-600 px-2 py-1 rounded-full w-max">Accessories</span>
+                    <h3 class="text-lg font-bold mt-2 text-gray-800">เมาส์ไร้สาย Ergonomic</h3>
+                    <p class="text-gray-500 text-sm mt-1 mb-4 flex-grow">ดีไซน์แนวตั้ง ป้องกันออฟฟิศซินโดรม</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-blue-600">฿1,190</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-10 mt-6 text-center">
+        <p>© 2026 GadgetStore Demo. โครงสร้าง Grid 16 รายการ</p>
+    </footer>
+
+</body>
+</html>

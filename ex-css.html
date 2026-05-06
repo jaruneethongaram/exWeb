@@ -1,36 +1,37 @@
 <style>
-    /* สไตล์พื้นฐาน */
-    .wrapper {
-    display: grid;
-    gap: 20px;
-    padding: 5vw; /* เว้นระยะขอบตามความกว้างหน้าจอ */
-    }
-
-    .card {
-    height: 30vh; /* ให้การ์ดสูง 30% ของความสูงหน้าจอเสมอ */
-    background: #3498db;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
-
-
-    /* มือถือ (Default): แสดง 1 คอลัมน์ (กว้างเต็ม) */
-    .wrapper {
-    grid-template-columns: 1fr; 
-    }
-
-    /* Tablet (768px ขึ้นไป): แสดง 2 คอลัมน์ (แบ่งคนละ 1fr) */
-    @media (min-width: 768px) {
-    .wrapper {
-        grid-template-columns: 1fr 1fr;
-        padding: 2vw; /* หน้าจอใหญ่ขึ้น ลดสัดส่วน Padding ลง */
-    }
-    }
+ /* สไตล์พื้นฐาน */
+ .wrapper {
+display: grid;
+gap: 20px;
+padding: 5vw; /* เว้นระยะขอบตามความกว้างหน้าจอ */
+ }
+ 
+ .card {
+height: 30vh; /* ให้การ์ดสูง 30% ของความสูงหน้าจอเสมอ */
+background: #3498db;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+ }
+ 
+ /* มือถือ (Default): แสดง 1 คอลัมน์ (กว้างเต็ม) */
+ .wrapper {
+grid-template-columns: 1fr; 
+ }
+ 
+ 
+ /* Tablet (768px ขึ้นไป): แสดง 2 คอลัมน์ (แบ่งคนละ 1fr) */
+ @media (min-width: 768px) {
+ .wrapper {
+grid-template-columns: 1fr 1fr;
+padding: 2vw; /* หน้าจอใหญ่ขึ้น ลดสัดส่วน Padding ลง */
+ }
+ }
 </style>
 
+<!-----ส่วนของการเรียกใช้งาน CSS------>
 <div class="wrapper">
-  <div class="card">Card 1</div>
-  <div class="card">Card 2</div>
+ <div class="card">Card 1</div>
+ <div class="card">Card 2</div>
 </div>
